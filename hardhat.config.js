@@ -22,6 +22,7 @@ module.exports = {
     }
   },
   networks: {
+    // Ethereum Chain
     mainnet: {
       url: `https://mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: { mnemonic: process.env.MNEMONIC }
@@ -34,18 +35,23 @@ module.exports = {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_KEY}`,
       accounts: { mnemonic: process.env.MNEMONIC }
     },
+    kovan: {
+      url: `https://kovan.infura.io/v3/${process.env.INFURA_KEY}`,
+      accounts: { mnemonic: process.env.MNEMONIC }
+    }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_KEY
+    apiKey: {
+      // Ethereum Chain
+      mainnet: process.env.ETHERSCAN_KEY,
+      ropsten: process.env.ETHERSCAN_KEY,
+      rinkeby: process.env.ETHERSCAN_KEY,
+      kovan: process.env.ETHERSCAN_KEY,
+    }
   },
   namedAccounts: {
     deployer: 0,
-    trader1: 1,
-    trader2: 2,
-    trader3: 3,
-    trader4: 4,
-    treasury: 5,
-    newOwner: 6
+    newOwner: 1
   }
 };
 
