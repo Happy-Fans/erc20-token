@@ -1,6 +1,6 @@
 # HAPPY ERC20 Token Contract
 
-The HAPPY ERC20 token contract running on the Ethereum blockchain.
+The HAPPY ERC20 Token contract deployed on the Ethereum blockchain.
 
 
 ## Ethereum
